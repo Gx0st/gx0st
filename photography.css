@@ -38,7 +38,7 @@
   }
 
   .gallery-section .image{
-    flex: 25%;
+    flex: 49%;
     overflow: hidden;
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=107401), auto;
   }
