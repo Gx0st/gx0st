@@ -25,10 +25,10 @@
   }
 
   .border{
-    width: 130px;
+    width: 50px;
     height: 4px;
     background: url(texture.jpg);
-    margin: 30px auto;
+    margin: 15px auto;
   }
 
   .gallery-section .gallery{
@@ -50,12 +50,12 @@
   }
 
   .gallery-section .image:hover img{
-    transform: scale(1.1) rotate(6deg);
+    transform: scale(1.3) rotate(3deg);
   }
 
-  @media screen and (max-width:800px) {
+  @media screen and (max-width:1565px) {
     .gallery-section .image{
-      flex: 100%;
+      flex: 33%;
     }
   }
 
