@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "vcr_osd_mono-webfont";
+    box-sizing: border-box;
+  }
+  
+  .gallery-section {
+    width: 100%;
+    padding: 60px 0;
+    background: url(texture.jpg);
+  }
+
+  .inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px; 
+  }
+
+  .gallery-section h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+  }
+
+  .border{
+    width: 130px;
+    height: 4px;
+    background: url(texture.jpg);
+    margin: 30px auto;
+  }
+
+  .gallery-section .gallery{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .gallery-section .image{
+    flex: 25%;
+    overflow: hidden;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=107401), auto;
+  }
+
+  .gallery-section .image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+  }
+
+  .gallery-section .image:hover img{
+    transform: scale(1.1) rotate(6deg);
+  }
+
+  @media screen and (max-width:800px) {
+    .gallery-section .image{
+      flex: 100%;
+    }
+  }
+
+  @media screen and (max-width:765px) {
+    .gallery-section .image{
+      flex: 53%;
+    }
+  }
+
+  @media screen and (max-width:333px) {
+    .gallery-section .image{
+      flex: 63%;
+    }
+  }
+  
