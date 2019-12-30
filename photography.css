@@ -38,13 +38,13 @@
   }
 
   .gallery-section .image{
-    flex: 49%;
+    flex: 55%;
     overflow: hidden;
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=75048), auto;
   }
 
   .gallery-section .image img{
-    width: 100%;
+    width: 77%;
     height: 100%;
     transition: 0.4s;
   }
