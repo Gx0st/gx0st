@@ -5,8 +5,9 @@
     
     <link
   rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-<!-- START NAV -->
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+<!---START NAV-->
 
 <nav id="navbar" class="nav">
   <ul class="nav-list">
@@ -15,8 +16,8 @@
     </li>
   </ul>
 </nav>
-
 <!-- END NAV -->
+
 <!-- START CONTACT SECTION -->
 <body>
 <section id="contact" class="contact-section">
@@ -45,7 +46,6 @@
   </div>
 </section>
 
-</body>
 
 <!-- END CONTACT SECTION -->
 
@@ -63,6 +63,8 @@
 
 <!-- END FOOTER SECTION -->
 </footer>
+</body>
+</html>
 
 <style>
     @font-face {font-family: 'vcr_osd_mono-webfont'; src: url('vcr_osd_mono-webfont.eot'); src: url('vcr_osd_mono-webfont.eot?#iefix') format('embedded-opentype'), url('vcr_osd_mono-webfont.woff2') format('woff2'), url('vcr_osd_mono-webfont.woff') format('woff'), url('vcr_osd_mono-webfont.ttf') format('truetype'), url('webfont.svg#svgFontname') format('svg');}
@@ -146,19 +148,16 @@ body {
   
 }
 
-h1,
+
 h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-family: "vcr_osd_mono-webfont";
+  font-weight: 300;
   text-align: center;
+  font-size: 10px;
 }
 
 h1 {
   font-size: 6rem;
-}
-
-h2 {
-  font-size: 4.2rem;
 }
 
 ul {
@@ -212,93 +211,6 @@ img {
 
 .nav-list a:hover {
   background: var(--main-blue);
-}
-
-/* Welcome section */
-
-.welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-}
-
-.welcome-section > p {
-  font-size: 3rem;
-  font-weight: 200;
-  font-style: italic;
-  color: var(--main-red);
-}
-
-/* Projects section */
-
-.projects-section {
-  text-align: center;
-  padding: 10rem 2rem;
-  background: var(--main-blue);
-}
-
-.projects-section-header {
-  max-width: 640px;
-  margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
-}
-
-@media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
-}
-
-/* "Automagic" image grid using no media queries */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
-}
-
-@media (max-width: 30.625em) {
-  .projects-section {
-    padding: 6rem 1rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.project {
-  background: var(--main-gray);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
-}
-
-.code {
-  color: var(--main-gray);
-  transition: color 0.3s ease-out;
-}
-
-.project:hover .code {
-  color: #ff7f50;
-}
-
-.project-image {
-  height: calc(100% - 6.8rem);
-  width: 100%;
-  object-fit: cover;
-}
-
-.project-title {
-  font-size: 2rem;
-  padding: 2rem 0.5rem;
 }
 
 .btn {
@@ -374,8 +286,8 @@ img {
   transform: translateY(8px);
 }
 
-/* Footer */
 
+/* Footer */
 footer {
   font-weight: 300;
   display: default;
@@ -386,25 +298,4 @@ footer {
   
 }
 
-footer > p {
-  margin: 2rem;
-}
-
-footer i {
-  vertical-align: middle;
-}
-
-@media (max-width: 28.75em) {
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-.site-footer {
-  background: rgb(0, 0, 0);
-}
-
-#footer-content {
-  background: rgb(0, 0, 0);
-}
 </style>
