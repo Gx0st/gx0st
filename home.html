@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <!-- START NAV -->
-
+<head>
 <nav id="navbar" class="nav">
-  <ul class="nav-list">
+  <ul class="nav-list"> <!-- You can add a Hyper Link here -->
     <li>
-      <a href="index.html">HQ</a>
+      <a href="index.html"></a>
     </li>
     <li>
       <a href="https://www.youtube.com/channel/UCSM3fpzXloGLNL7N6qnjamA">Youtube</a>
@@ -20,13 +20,20 @@
 
 <!-- START WELCOME SECTION -->
 
+<!-- Background Start -->
+<section class="showcase">
+  <div class="video-container">
+    <video src="legends.m4v" autoplay muted loop></video>
+  </div> </section>
+
 <section id="welcome-section" class="welcome-section">
   <h1>Cinematographer</h1>
   <p></p>
 </section>
-
+<!-- Background End -->
+</head>
 <!-- END WELCOME SECTION -->
-
+<body>
 <!-- START PROJECTS SECTION -->
 
 <section id="projects" class="projects-section">
@@ -138,7 +145,7 @@
     >Show All<i class="fas fa-chevron-right"></i
   ></a>
 </section>
-
+</body>
 <!-- END PROJECTS SECTION -->
 
 
@@ -247,6 +254,22 @@ h2 {
 h1 {
   font-size: 6rem;
 }
+
+/* Background Text Clip */ 
+h1 {
+  font-size: 9vw;
+  font-weight: 700;
+  font-family: "vcr_osd_mono-webfont";
+  position: relative;
+  text-align: center;
+  margin: 0;
+  -webkit-text-fill-color: transparent;
+  background-image: url("https://media.giphy.com/media/3o7ZeGZ5xB2FDSofQI/giphy.gif");
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-repeat: no-repeat;
+}
+/* Background Text Clip End */ 
 
 h2 {
   font-size: 4.2rem;
@@ -445,8 +468,39 @@ footer i {
 }
 
 
+/* Video Background Here */ 
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: var(--primary-color) url('legends.m4v') no-repeat center
+		center/cover;
+}
 
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+  position: static;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: static;
+}
 
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: static;
+}
+/* Video Background End */ 
 
 
 
