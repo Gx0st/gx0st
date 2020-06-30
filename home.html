@@ -8,10 +8,10 @@
       <a href="index.html"></a>
     </li>
     <li>
-      <a href="https://www.youtube.com/channel/UCSM3fpzXloGLNL7N6qnjamA">Youtube</a>
+      <a  style="font-size: 45px" href="https://www.youtube.com/channel/UCSM3fpzXloGLNL7N6qnjamA">Youtube</a>
     </li>
     <li>
-      <a href="contact.html">Contact</a>
+      <a style="font-size: 45px" href="contact.html">Contact</a>
     </li>
   </ul>
 </nav>
@@ -29,19 +29,19 @@
 <section id="welcome-section" class="welcome-section">
   <h1>Cinematography</h1>
   <p></p>
-</section>
-</head>
-<!-- Background End -->
 
+
+</section> <!--- removing this will collapse it -->
+<!-- Background End -->
 <!-- END WELCOME SECTION -->
 
-<body>
-<!-- START PROJECTS SECTION -->
 
+<!-- START PROJECTS SECTION -->
+<body>
 <section id="projects" class="projects-section">
   <h2 class="projects-section-header">Files</h2>
 
-  <div class="projects-grid">
+  <div class="projects-grid"> <!--- adding </div at the end will destroy the initial boxes of content-->
 
     <!--- Se Va by Delian --->
     <a
@@ -84,7 +84,7 @@
     <!--- Trama Music Video --->
     <a
       href="https://www.youtube.com/watch?v=YHzBx4Hk00k"
-      target="_blank"
+      target="_self"
       class="project project-tile"
     >
       <img
@@ -188,7 +188,7 @@
 
 
 
-/* Your video container is overlapping your links. Add this to your CSS */
+
 
 
 
@@ -288,7 +288,7 @@ h1 {
 
 /* Background Text Clip */ 
 h1 {
-  font-size: 9vw;
+  font-size: 10vw;
   font-weight: 700;
   font-family: "vcr_osd_mono-webfont";
   position: relative;
@@ -362,12 +362,12 @@ img {
 /* Welcome section */
 
 .welcome-section {
-  display: flex;
+  display: flex; /* OG one is Flex */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50vh;
+  height: 40vh; /* this will change the border in between Cinematography and Files [last was 50vh for normal]*/
   background-color: #000;
   background-image: linear-gradient(62deg, #000000 0%, #000000 100%);
 }
@@ -383,14 +383,14 @@ img {
 
 .projects-section {
   text-align: center;
-  padding: 10rem 2rem;
+  padding: 10rem 2rem; /* 10rem 2rem is the OG */
   background: black;
 }
 
 .projects-section-header {
-  max-width: 640px;
+  max-width: 333px; /* changes the white lines under files width */
   margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid black;
+  border-bottom: 0.2rem solid black; /* 0.2 rem is OG */
 }
 
 @media (max-width: 28.75em) {
@@ -405,7 +405,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1280px; /* 1280px is OG*/
   margin: 0 auto;
   margin-bottom: 6rem;
 }
