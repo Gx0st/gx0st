@@ -2,7 +2,14 @@
 <html>
 <!-- START NAV -->
 <head>
+
 <nav id="navbar" class="nav">
+  <!--- attempting hamburger menu -->
+  <div class="nav">
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle"/>
+    <div class="menu">
+  <!--- attempting hamburger menu -->
   <ul class="nav-list"> <!-- You can add a Hyper Link here -->
     <li>
       <a href="index.html"></a>
@@ -187,11 +194,6 @@
 <style>
 
 
-
-
-
-
-
 /* project hover */
 a:hover {color: red;}
 /* project hover */
@@ -323,6 +325,17 @@ img {
 /* nav */
 
 .nav {
+
+/* hamburger menu */ 
+color: red;
+border-bottom: 1px solid red;
+text-align: left;
+height: 80px;
+line-height: 70px;
+/* hamburger menu*/ 
+
+
+/* not hamburger */
   display: flex;
   justify-content: flex-end;
   position: fixed;
@@ -333,6 +346,53 @@ img {
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
+/* not hamburger */
+
+
+/* hamburger menu */
+.menu {
+  margin: 0 30px 0 0; /* goes right */
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white(245, 0, 0); 
+  margin: 0px 10px;
+  line-height: 50px; 
+  display: block;
+  /* removed  border-bottom: 1px solid red;*/
+  margin: 0;
+  clear: auto;
+}
+
+.span {
+  color: purple;
+  
+}
+
+label {
+  margin: 0px 65px 0px 620px;
+  font-size: 75px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: auto;
+}
+
+#toggle {
+  display: none;
+
+}
+
+#toggle:checked + .menu {
+  display: block;
+}
+
+@media only screen and (max-width: 1000px) { label { display: block; cursor: pointer;}}
+/* hamburger menu */
 
 .nav-list {
   display: flex;
