@@ -69,6 +69,26 @@
   <h2 class="projects-section-header">Files</h2>
 
   <div class="projects-grid"> <!--- adding </div at the end will destroy the initial boxes of content-->
+  <!--- Blueface and Hardini --->
+  <a 
+    href=""
+    target="_self"
+    class="project project-tile"
+  >
+   <img
+    class="project-image"
+    src="blueface.jpg"
+    alt="project"
+    />
+  <p class="project-title">
+    <span class="code">&lt;</span>
+    Tomorrow...
+    <span class="code">&#47;&gt;</span>
+  </p>
+  </a>
+
+  <!--- Blueface and Hardini --->
+
   <!-- @ColdHardKass -->
     <a 
       href="https://youtu.be/53_hes3TSbM"
@@ -158,7 +178,7 @@
        />
        <p class="project-tile">
         <span class="code">&lt;</span>
-        Legends
+          Legends
         <span class="code">&#47;&gt;</span>
       </p>
     </a>
@@ -177,7 +197,7 @@
       />
       <p class="project-title">
         <span class="code">&lt;</span>
-        Trama by Josh Juanico {Official Video}
+        Trama by Josh Juanico {Official}
         <span class="code">&#47;&gt;</span>
       </p>
     </a>
@@ -306,7 +326,7 @@ html {
    * default document font size = 16px, 1rem = 16px, 100% = 16px
    * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
   */
-  font-size: 62.5%;
+  font-size: 45.5%;
   scroll-behavior: smooth;
 }
 
@@ -489,7 +509,7 @@ label {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 42vh; /* this will change the border in between Cinematography and Files [last was 50vh for normal]*/
+  height: 50vh; /* this will change the border in between Cinematography and Files [last was 50vh for normal]*/
   background-color: #000;
   background-image: linear-gradient(62deg, #000000 0%, #000000 100%);
 }
@@ -510,7 +530,7 @@ label {
 }
 
 .projects-section-header {
-  max-width: 333px; /* changes the white lines under files width */
+  max-width: 333px; /* changes the white line under files width */
   margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid black; /* 0.2 rem is OG */
 }
@@ -525,9 +545,9 @@ label {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
+  grid-gap: 8rem;
   width: 100%;
-  max-width: 1280px; /* 1280px is OG*/
+  max-width: 1200px; /* 1280px is OG*/
   margin: 0 auto;
   margin-bottom: 6rem;
 }
@@ -564,7 +584,7 @@ label {
 }
 
 .project-title {
-  font-size: 2rem;
+  /*deleting font-size: 2rem; */ 
   padding: 2rem 0.5rem;
 }
 
