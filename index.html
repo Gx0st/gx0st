@@ -28,16 +28,17 @@
 
 
 	
-	<meta name="viewport" content="width=device, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<section class="showcase">
 		<div class="video-container">
 			<video src="behind.m4v" autoplay playsinline muted loop></video>
 		</div>
 		<div class="content">
-			<h1>Ghost Robles</h1>
+			 <a href="home.html" class="btn">
+			<img width="180" height="auto"  src="wh.png">
+		</a>
+			</div>
 			
-			<a href="home.html" class="btn">HQ</a>
-		</div>
 	</section>
 </head>
 
@@ -83,7 +84,7 @@ h1 {
 }
 
 .showcase {
-	height: 100vh;
+	height: 100vh; /* changes image top to bottom */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -130,17 +131,17 @@ h1 {
 
 .btn {
 	display: inline-block;
-	padding: 15px 18px;
+	padding: 13px 4px;
 	background: var(--primary-color);
 	color: rgb(255, 0, 0);
 	border-radius: 80px;
 	border: solid rgb(255, 0, 0) 3px;
-	margin-top: 15px;
-	opacity: 1.9;
+	margin-left: auto;
+	opacity: 0.95;
 }
 
 .btn:hover {
-	transform: scale(0.88);
+	transform: scale(0.75);
 }
 
 
