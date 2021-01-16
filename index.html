@@ -103,7 +103,7 @@ h1 {
 	height: 100%;
 	overflow: hidden;
 	background: var(--primary-color) url('behindit.m4v') no-repeat center
-		center/contain;
+		center/contain; /* changed from cover to contain */ 
 }
 
 .video-container video {
@@ -146,7 +146,12 @@ h1 {
 	transform: scale(0.75);
 }
 
-
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin:0; /*Add this*/
+}
 
     </style>
 
